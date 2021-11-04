@@ -1,0 +1,14 @@
+{
+  "development": {
+    "dialect":"sqlite",
+    "storage":"C:\\Users\\medvosa\\Documents\\ReactGraphql\\back\\database\\db.sqlite"
+  },
+  "test": {
+    "dialect":"sqlite",
+    "storage":"C:\\Users\\medvosa\\Documents\\ReactGraphql\\back\\database\\db.sqlite"
+  },
+  "production": {
+    "dialect":"sqlite",
+    "storage":"C:\\Users\\medvosa\\Documents\\ReactGraphql\\back\\database\\db.sqlite"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon — exec babel-node index.js",
+    "server": "nodemon --exec babel-node --watch src src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/node": "^7.14.9",
+    "@babel/preset-env": "^7.15.0",
+    "apollo-server-express": "^3.1.2",
+    "babel-plugin-require-context-hook": "^1.0.0",
+    "graphql": "^15.5.1",
+    "graphql-parse-resolve-info": "^4.12.0",
+    "graphql-tools": "^8.1.0",
+    "knex": "^0.95.10",
+    "sequelize": "^6.6.5",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  }
+}

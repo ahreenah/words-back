@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon — exec babel-node index.js",
+    "start": "nodemon — exec babel-node src/index.js",
     "server": "nodemon --exec babel-node --watch src src/index.js"
   },
   "author": "",
@@ -21,6 +21,7 @@
     "graphql-parse-resolve-info": "^4.12.0",
     "graphql-tools": "^8.1.0",
     "knex": "^0.95.10",
+    "mysql": "^2.18.1",
     "sequelize": "^6.6.5",
     "sqlite3": "^5.0.2"
   },

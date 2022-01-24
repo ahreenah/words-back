@@ -146,7 +146,7 @@ input TrainWordResult{
 
 type RootMutation{
     createWordSet(name:String, language:String):WordSetResponse
-    register(email:String, password:String, username:String):AuthStatus
+    register(email:String, password:String, username:String, name:String, pronoun:Int):AuthStatus
     login(login:String, password:String):AuthStatus
     addWord(word:String, translation:String,setId:Int):WordResponse
     dropWord(word:Int, set:Int):WordResponse

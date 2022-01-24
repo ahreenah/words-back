@@ -6,11 +6,17 @@ import Schema from './schema.js';
 import knex from 'knex';
 
 const knexDb = knex({
-  client: 'sqlite3',
-  debug:true,
+  client: 'mysql',
+  debug:true,  
   connection: {
-    filename: 'C:/Users/medvosa/Documents/WordsBack/db.db',
+    host:'194.37.81.206',
+    user:'backUser',
+    password:'Passw0rd$',
+    database:'WordsDB',
+    port:3306,
+    //filename: '../../db.db',//'C:/Users/medvosa/Documents/WordsBack/db.db',
   }
+
 });
 
 let clear = false;

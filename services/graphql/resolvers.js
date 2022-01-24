@@ -295,7 +295,7 @@ group by res;
                 }
             }
         },
-        async register(root,{email,password,username},context){
+        async register(root,{email,password,username, name,pronoun},context){
             let knexDb = context.dataSources.knexDb;
             let user = await knexDb('users').select({
                 id:'id'
@@ -317,9 +317,9 @@ group by res;
                 }
             
             let res = await knexDb('users').insert({
-                name:'',
+                name,
                 password,
-                pronoun:'',
+                pronoun,
                 email,
                 username,
                 avatar:'',
@@ -439,7 +439,7 @@ group by res;
                     console.log('WeWeWe')
                     */}
                         await knexDb.schema.raw(`
-                            insert into word_trainings values(${word},${training},1) on CONFLICT (wordId, trainingId) do update set count = count+1 ;
+                            insert into word_trainings values(${word},${training},1) on DUPLICATE KEY update  count = count+1 ;
                         `)
                     // }
                 }
